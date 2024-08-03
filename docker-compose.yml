@@ -15,7 +15,9 @@ services:
     networks:
       - network
     restart: always
-
+  telegrambot:
+    build:
+      dockerfile: src/telegram_bot/
 
 networks:
   network:
